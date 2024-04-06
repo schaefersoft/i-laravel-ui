@@ -4,7 +4,7 @@
         {!! $label !!}
     </label>
     <input
-        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-theme-600 sm:text-sm sm:leading-6 @if($errors->has($name)) ring-red-500 @else ring-gray-300 @endif"
+        class="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-theme-600 sm:text-sm sm:leading-6 @if($errors->has($name)) ring-red-500 @else ring-gray-300 @endif"
         autocomplete="{{$autocomplete}}"
         name="{{$name}}"
         id="{{$name}}"
