@@ -15,7 +15,8 @@ class Input extends Component
         public string $type = 'text',
         public string $autocomplete = 'off',
         public bool $disabled = false,
-        public bool $autofocus = false
+        public bool $autofocus = false,
+        public bool $required = false
     ) {}
 
     public function render(): View

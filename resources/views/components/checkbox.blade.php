@@ -4,7 +4,8 @@
                class="h-4 w-4 rounded border-gray-300 text-theme-600 focus:ring-2 focus:ring-theme-600 focus:ring-offset-0 hover:cursor-pointer"
                id="{{$name}}"
                name="{{$name}}"
-               @if($disabled) disabled @endif/>
+               @if($disabled) disabled @endif
+               @if($required) required="required" @endif/>
     </div>
     <div class="text-sm leading-6">
         <label for="{{$name}}" class="flex items-center ps-3 font-medium text-gray-900 hover:cursor-pointer">

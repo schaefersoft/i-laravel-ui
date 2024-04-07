@@ -12,7 +12,9 @@
         placeholder="{{$placeholder}}"
         @if($disabled) disabled @endif
         @if($autofocus) autofocus @endif
-        value="{{$value ?? null}}"/>
+        @if($required) required="required" @endif
+        value="{{$value ?? null}}"
+    />
 
     @error($name)
     <p class="text-sm text-red-600">{{ $message }}</p>
