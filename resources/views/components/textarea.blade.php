@@ -8,7 +8,7 @@
         name="{{$name}}"
         id="{{$name}}"
         rows="{{$rows}}"
-        @if($disabled) disabled @endif>@if($value){{$value}}@endif</textarea>
+        @if($disabled) disabled @endif {{$attributes}}>@if($value){{$value}}@endif</textarea>
     @error($name)
     <p class="text-sm text-red-600">{{ $message }}</p>
     @enderror

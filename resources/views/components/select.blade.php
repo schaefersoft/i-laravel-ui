@@ -8,7 +8,9 @@
         name="{{$name}}"
         id="{{$name}}"
         @if($disabled) disabled @endif
-        @if($autofocus) autofocus @endif>
+        @if($autofocus) autofocus @endif
+        {{$attributes}}
+    >
         {{$slot}}
     </select>
 

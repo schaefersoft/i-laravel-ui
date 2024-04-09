@@ -14,6 +14,7 @@
         @if($autofocus) autofocus @endif
         @if($required) required="required" @endif
         value="{{$value ?? null}}"
+        {{ $attributes }}
     />
 
     @error($name)

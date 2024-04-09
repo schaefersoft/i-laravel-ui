@@ -10,7 +10,9 @@
         type="file"
         @if($accept) accept="{{$accept}}" @endif
         @if($disabled) disabled @endif
-        @if($multiple) multiple @endif/>
+        @if($multiple) multiple @endif
+        {{$attributes}}
+    />
     @error($name)
     <p class="text-sm text-red-600">{{ $message }}</p>
     @enderror
