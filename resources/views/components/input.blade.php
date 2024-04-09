@@ -1,4 +1,4 @@
-<div class="relative mb-2">
+<div class="relative mb-2 w-full">
     <label class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
            for="{{$name}}">
         {!! $label !!}
