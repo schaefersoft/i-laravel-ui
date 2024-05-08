@@ -1,0 +1,14 @@
+#sidebar {
+    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-[80vw] max-sm:px-8 max-sm:py-4 max-sm:bg-white max-sm:z-[110] max-sm:-translate-x-full sm:col-span-4 md:col-span-3;
+}
+
+#sidebar[data-opened] {
+    @apply max-sm:translate-x-0 max-sm:transition-transform max-sm:duration-300 max-sm:ease-in-out ;
+}
+
+#sidebar-background {
+    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-full max-sm:bg-black/40 max-sm:z-[100] max-sm:-translate-x-full sm:hidden;
+}
+#sidebar[data-opened] + #sidebar-background {
+    @apply max-sm:translate-x-0;
+}
