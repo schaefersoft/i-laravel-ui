@@ -8,9 +8,9 @@
 
     <aside id="sidebar"
            class="">
-        <div class="flex items-center justify-end w-full sm:hidden">
+        <div class="flex items-center justify-end w-full h-[8%] sm:hidden">
             <div id="sidebar-close-button"
-                 class="p-2">
+                 class="pt-4 pe-4">
                 <svg xmlns="http://www.w3.org/2000/svg"
                      class="size-8 fill-black"
                      viewBox="0 0 384 512">
@@ -19,7 +19,9 @@
                 </svg>
             </div>
         </div>
-        {{$sidebar}}
+        <div id="sidebar-content" class="max-sm:h-[92%]">
+            {{$sidebar}}
+        </div>
     </aside>
     <div id="sidebar-background"></div>
     <div class="col-span-12 sm:col-span-8 md:col-span-9">
