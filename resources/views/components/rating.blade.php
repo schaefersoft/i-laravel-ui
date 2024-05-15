@@ -5,5 +5,5 @@
         </svg>
     @endfor
 
-    <div class="absolute right-0 top-0 h-full backdrop-saturate-0 z-10 text-white" style="width: {{($maxStars - $stars) * 20}}%"></div>
+    <div class="absolute right-0 top-0 h-full backdrop-saturate-0 z-10 text-white" style="width: {{($maxStars - $stars) * (100/$maxStars)}}%"></div>
 </div>
