@@ -2,7 +2,7 @@
     <div class="col-span-12 mb-6 sm:hidden">
         <x-ui::button type="button"
                       id="sidebar-open-button">
-            {{$expandButtonText}}
+            {{$expand_button}}
         </x-ui::button>
     </div>
 

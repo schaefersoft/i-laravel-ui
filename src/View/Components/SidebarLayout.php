@@ -9,7 +9,6 @@ use Illuminate\View\Component;
 class SidebarLayout extends Component
 {
     public function __construct(
-        public string $expandButtonText
     ) {
     }
 
