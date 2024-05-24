@@ -56,4 +56,4 @@ class SidebarHandler {
     }
 }
 
-export const SidebarHanlder = new SidebarHandler();
+export const sidebarHandler: SidebarHandler = new SidebarHandler();
