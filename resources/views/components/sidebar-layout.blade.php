@@ -1,4 +1,4 @@
-<div class="grid grid-cols-12">
+<div class="grid grid-cols-12 gap-4">
     <div class="col-span-12 mb-6 sm:hidden">
         <x-ui::button type="button"
                       id="sidebar-open-button">
