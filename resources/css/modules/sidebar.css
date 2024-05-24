@@ -7,7 +7,7 @@
 }
 
 #sidebar-content {
-    @apply max-sm:px-8 max-sm:overflow-y-scroll
+    @apply max-sm:px-4 max-sm:overflow-y-scroll
 }
 
 #sidebar-background {
