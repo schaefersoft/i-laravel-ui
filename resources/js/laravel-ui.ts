@@ -1,2 +1,2 @@
-import {sidebarHandler} from "./modules/sidebar";
-import {simpleCookieHandler} from "./modules/cookies-simple";
+import './modules/sidebar';
+import './modules/cookies-simple';
