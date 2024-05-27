@@ -20,7 +20,7 @@
 }
 
 .expand-frame[data-opened] .expand-content {
-    @apply overflow-y-auto;
+    @apply py-2 overflow-y-auto;
 }
 
 .expand-frame:not([data-opened]) .expand-content {
