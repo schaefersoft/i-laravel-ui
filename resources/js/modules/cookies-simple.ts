@@ -23,6 +23,12 @@ class SimpleCookieHandler {
             this.cookies_accepted = true;
             this.cookie_consent_given = storageValue === 'accepted';
 
+            if (!this.cookie_consent_given && this.onCookiesDeclined) {
+                this.onCookiesDeclined();
+            } else if (this.onCookiesAccepted) {
+                this.onCookiesAccepted();
+            }
+
             this.deleteCookieNotification();
             return;
         }
