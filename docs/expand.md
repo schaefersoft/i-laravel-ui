@@ -72,7 +72,7 @@ There are multiple named slots in the layout, where each serves a different pupo
 
 ````html
 
-<x-ui::sidebar-layout>
+<x-ui::expand>
     <x-slot name="title">
         <h2>Filters</h2>
     </x-slot>
@@ -84,7 +84,7 @@ There are multiple named slots in the layout, where each serves a different pupo
             <li>...</li>
         </ul>
     </x-slot>
-</x-ui::sidebar-layout>
+</x-ui::expand>
 ````
 
 ### Content Height
@@ -107,7 +107,6 @@ You have to provide your custom max-height through a TailwindCSS class. You may 
 There is a attribute for the opened state. Use the `opened` attribute here.
 
 #### Example
-You have to provide your custom max-height through a TailwindCSS class. You may use Tailwind's arbitary values here.
 ````html
 <x-ui::expand opened="true">
     <x-slot name="title">
