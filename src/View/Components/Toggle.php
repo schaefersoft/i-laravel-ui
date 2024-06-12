@@ -10,9 +10,10 @@ class Toggle extends Component
 {
     public function __construct(
         public string $name,
-        public string $value,
-        public bool $checked = false,
-    ) {}
+        public bool   $checked = false,
+    )
+    {
+    }
 
     public function render(): View
     {
