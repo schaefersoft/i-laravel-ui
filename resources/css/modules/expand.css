@@ -6,11 +6,11 @@
     @apply hover:cursor-pointer w-full;
 }
 
-.expand-frame *.expand-toggle {
+.expand-frame > .expand-title .expand-toggle {
     @apply transition-all duration-300 ease-in-out;
 }
 
-.expand-frame[data-opened] *.expand-toggle {
+.expand-frame[data-opened] > .expand-title .expand-toggle {
     transform: rotateX(180deg);
 }
 
@@ -20,7 +20,7 @@
 }
 
 .expand-frame[data-opened] .expand-content {
-    @apply py-2 overflow-y-auto;
+    @apply overflow-y-auto;
 }
 
 .expand-frame:not([data-opened]) .expand-content {
