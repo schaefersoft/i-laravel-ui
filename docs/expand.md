@@ -1,76 +1,77 @@
-# Expand
+# Expand Component
 
-The expand component provides a simple and lightweight solution for different expanders.
+The Expand component provides a simple and lightweight solution for creating expandable sections within your Laravel
+application.
 
 ## Imports
 
-To use the expand component you have to import is corresponding assets.
-These can be found inside `./vendor/schaefersoft/laravel-ui/resources/{js, css}`. The layout requires both JS assets and
-CSS assets.
+To use the Expand component, you need to import the corresponding assets. These assets are located
+in `vendor/schaefersoft/laravel-ui/resources/{js,css}` and include both **JavaScript** and **CSS** files.
 
-There are 2 ways of importing assets in this package.
+There are two ways to import the required assets:
 
-### Option 1
+### Option 1: Import All Assets
 
-Importing all assets from the package. (This is only required once, even if you use multiple components from the
-laravel-ui package)
+You can import all assets from the package, which is only required once per project, even if you use multiple components from the
+laravel-ui package.
 
 Add the following lines to the corresponding files:
 
-`resources/css/app.css`
+#### `resources/css/app.css`
 
 ```css
 @import "../../vendor/schaefersoft/laravel-ui/resources/css/laravel-ui.css";
 ```
 
-`resources/js/app.js`
+#### `resources/js/app.js`
 
 ```javascript
-import '../../vendor/schaefersoft/laravel-ui/resources/js/laravel-ui'
+import '../../vendor/schaefersoft/laravel-ui/resources/js/laravel-ui';
 ```
 
-### Option 2
+### Option 2: Import Only Required Assets
 
-Only import the required assets to reduce bundle size and improve overall performance.
+To reduce bundle size and improve overall performance, you can import only the assets required for the Expand component.
 
-`resources/css/app.css`
+#### `resources/css/app.css`
 
 ```css
 @import "../../vendor/schaefersoft/laravel-ui/resources/css/modules/expand.css";
 ```
 
-`resources/js/app.js`
+#### `resources/js/app.js`
 
 ```javascript
-import '../../../vendor/schaefersoft/laravel-ui/resources/js/modules/expand';
+import '../../vendor/schaefersoft/laravel-ui/resources/js/modules/expand';
 ```
 
 ## Usage
 
-Follow these steps, to use the expand component.
+To use the Expand component, follow these steps. The layout includes multiple named slots, each serving a different
+purpose.
 
-There are multiple named slots in the layout, where each serves a different pupose.
+### Basic Structure
 
-````html
+```html
 
 <x-ui::expand>
     <x-slot name="title">
         <!-- 
-            Add all content here, that should always be displayed. 
+            Add all content here that should always be displayed. 
         -->
     </x-slot>
 
     <x-slot name="content">
         <!--  
-            Add all content for the expand here, Filtes, authors, whatever you'd like.
+            Add all content for the expandable section here, such as filters, authors, or any other content.
         -->
     </x-slot>
 </x-ui::expand>
-````
+```
 
-#### Example
+### Example
 
-````html
+```html
 
 <x-ui::expand>
     <x-slot name="title">
@@ -81,18 +82,21 @@ There are multiple named slots in the layout, where each serves a different pupo
         <ul>
             <li>Red</li>
             <li>Green</li>
-            <li>...</li>
+            <li>Blue</li>
         </ul>
     </x-slot>
 </x-ui::expand>
-````
+```
 
-### Content Height
-The content has a default max-height of `15rem`. You can customize this, by using the `max-height` attribute.
+### Customizing Content Height
+
+The content has a default max-height of `15rem`. You can customize this by using the `max-height` attribute. Provide
+your custom max-height through a CSS class, using either a Tailwind class or Tailwind's arbitrary values.
 
 #### Example
-You have to provide your custom max-height through a TailwindCSS class. You may use Tailwind's arbitary values here.
-````html
+
+```html
+
 <x-ui::expand max-height="max-h-[250px]">
     <x-slot name="title">
         ...
@@ -101,13 +105,16 @@ You have to provide your custom max-height through a TailwindCSS class. You may 
         ...
     </x-slot>
 </x-ui::expand>
-````
+```
 
-### State
-There is a attribute for the opened state. Use the `opened` attribute here.
+### Setting the Initial State
+
+You can set the initial state of the expandable section using the `opened` attribute.
 
 #### Example
-````html
+
+```html
+
 <x-ui::expand opened="true">
     <x-slot name="title">
         ...
@@ -116,4 +123,26 @@ There is a attribute for the opened state. Use the `opened` attribute here.
         ...
     </x-slot>
 </x-ui::expand>
-````
+```
+
+### Displaying a State Indicator (Arrow)
+
+To add an arrow that changes its direction based on the state of the component, use an element with the class *
+*expand-toggle**. This element will be transformed with CSS.
+
+#### Example
+
+```html
+
+<x-ui::expand opened="true">
+    <x-slot name="title">
+        ...
+        <div class="expand-toggle">
+            <!-- Add your arrow here -->
+        </div>
+    </x-slot>
+    <x-slot name="content">
+        ...
+    </x-slot>
+</x-ui::expand>
+```
