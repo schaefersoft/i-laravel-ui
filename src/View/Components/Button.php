@@ -10,12 +10,8 @@ class Button extends Component
 {
     public function __construct(
         public string $type,
-        public ?string $id = null,
-        public bool $disabled = false
-    ) {
-        if(!$this->id){
-            $this->id = Str::random("10");
-        }
+    )
+    {
     }
 
     public function render(): View
