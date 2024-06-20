@@ -16,7 +16,7 @@ class Input extends Component
         public string $autocomplete = 'off',
         public bool $disabled = false,
         public bool $autofocus = false,
-        public bool $required = false
+        public bool $requiredAsterisks = false
     ) {}
 
     public function render(): View
