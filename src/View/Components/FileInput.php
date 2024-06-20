@@ -8,13 +8,16 @@ use Illuminate\View\Component;
 class FileInput extends Component
 {
     public function __construct(
-        public string $name,
-        public string $label = 'Unnamed input',
-        public string $type = 'text',
-        public bool $disabled = false,
-        public bool $multiple = false,
+        public string  $name,
+        public string  $label = 'Unnamed input',
+        public string  $type = 'text',
+        public bool    $disabled = false,
+        public bool    $multiple = false,
+        public bool    $requiredAsterisk = false,
         public ?string $accept = null,
-    ) {}
+    )
+    {
+    }
 
     public function render(): View
     {

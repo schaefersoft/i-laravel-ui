@@ -6,13 +6,12 @@
                name="{{$name}}"
                @if($disabled) disabled @endif
                @checked($checked)
-               @if($required) required="required" @endif
             {{$attributes}}
         />
     </div>
     <div class="text-sm leading-6">
         <label for="{{$name}}" class="flex items-center ps-3 font-medium text-gray-900 hover:cursor-pointer">
-            {{$slot}}
+            {{$slot}} @if($requiredAsterisk) <span class="text-red-600">*</span> @endif
         </label>
     </div>
 </div>

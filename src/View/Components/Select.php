@@ -10,9 +10,12 @@ class Select extends Component
     public function __construct(
         public string $name,
         public string $label = 'Unnamed input',
-        public bool $disabled = false,
-        public bool $autofocus = false
-    ) {}
+        public bool   $disabled = false,
+        public bool   $autofocus = false,
+        public bool   $requiredAsterisk = false
+    )
+    {
+    }
 
     public function render(): View
     {
