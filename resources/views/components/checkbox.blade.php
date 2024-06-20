@@ -4,7 +4,6 @@
                class="h-4 w-4 rounded border-gray-300 text-theme-600 focus:ring-2 focus:ring-theme-600 focus:ring-offset-0 hover:cursor-pointer"
                id="{{$name}}"
                name="{{$name}}"
-               @if($disabled) disabled @endif
                @checked($checked)
             {{$attributes}}
         />
@@ -15,6 +14,6 @@
         </label>
     </div>
 </div>
-@error($name)
+@error($name && $showValidationErrors)
 <p class="text-sm text-red-600">{{ $message }}</p>
 @enderror

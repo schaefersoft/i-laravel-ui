@@ -9,9 +9,9 @@ class Checkbox extends Component
 {
     public function __construct(
         public string $name,
-        public bool   $disabled = false,
         public bool   $requiredAsterisk = false,
         public bool   $checked = false,
+        public bool   $showValidationErrors = true
     )
     {
     }
