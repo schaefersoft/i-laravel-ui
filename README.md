@@ -20,7 +20,7 @@ export default {
         "./resources/**/*.vue",
         
         //Add this line
-        "./vendor/schaefersoft/laravel-ui/resources/**/*.{blade.php,css,js}"
+        "./vendor/schaefersoft/laravel-ui/resources/**/*.{blade.php,css,js,ts}"
     ],
     theme: {
         extend: {},
