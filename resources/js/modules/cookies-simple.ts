@@ -1,5 +1,5 @@
 class SimpleCookieHandler {
-    private localStorageName: string = 'cookie_consent';
+    private localStorageName: string = 'cookie_consent_' + import.meta.env.VITE_APP_NAME
     private cookies_accepted: boolean = false;
     public cookie_consent_given: boolean = false;
 
