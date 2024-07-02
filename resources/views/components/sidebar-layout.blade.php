@@ -10,7 +10,7 @@
            class="">
         <div class="flex items-center justify-end w-full h-[8%] sm:hidden">
             <div id="sidebar-close-button"
-                 class="pt-4 pe-4">
+                 class="pt-4 pe-4 hover:cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg"
                      class="size-8 fill-black"
                      viewBox="0 0 384 512">
