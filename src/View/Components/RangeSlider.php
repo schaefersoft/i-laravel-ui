@@ -16,7 +16,9 @@ class RangeSlider extends Component
         public ?int $lowerValue = null,
         public ?int $upperValue = null,
         public ?bool $showDetails = true,
-        public ?string $unit = null
+        public ?string $unit = null,
+        public ?bool $lowerDisabled = false,
+        public ?bool $upperDisabled = false
     )
     {
         if (!$this->lowerValue)

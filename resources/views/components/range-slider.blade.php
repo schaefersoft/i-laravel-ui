@@ -8,14 +8,16 @@
            value="{{$lowerValue}}"
            min="{{$min}}"
            max="{{$max}}"
-           type="range"/>
+           type="range"
+           @if($lowerDisabled) disabled @endif/>
     <input id="{{$upperName}}"
            name="{{$upperName}}"
            class="to-slider range-slider"
            value="{{$upperValue}}"
            min="{{$min}}"
            max="{{$max}}"
-           type="range"/>
+           type="range"
+           @if($upperDisabled) disabled @endif/>
 
     @if($showDetails)
         <div class="flex items-center justify-between flex-row pt-4">

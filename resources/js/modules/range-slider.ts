@@ -87,17 +87,25 @@ class RangeSliderHandler {
 
         if (fromValue === toValue) {
             if (clickValue < fromValue) {
+                if(fromSlider.disabled) return;
+
                 fromSlider.value = Math.round(clickValue).toString();
                 this.controlFromSlider(fromSlider, toSlider, null, selected);
             } else {
+                if(toSlider.disabled) return;
+
                 toSlider.value = Math.round(clickValue).toString();
                 this.controlToSlider(fromSlider, toSlider, null, selected);
             }
         } else {
             if (Math.abs(clickValue - fromValue) < Math.abs(clickValue - toValue)) {
+                if(fromSlider.disabled) return;
+
                 fromSlider.value = Math.round(clickValue).toString();
                 this.controlFromSlider(fromSlider, toSlider, null, selected);
             } else {
+                if(toSlider.disabled) return;
+
                 toSlider.value = Math.round(clickValue).toString();
                 this.controlToSlider(fromSlider, toSlider, null, selected);
             }

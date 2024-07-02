@@ -15,19 +15,18 @@
 }
 
 .range-slider::-webkit-slider-thumb {
-    @apply appearance-none pointer-events-auto size-6 bg-theme-600 rounded-full shadow cursor-pointer;
+    @apply appearance-none pointer-events-auto size-6 bg-theme-500 rounded-full shadow cursor-pointer hover:bg-theme-600 hover:cursor-ew-resize;
 }
-
 .range-slider::-moz-range-thumb {
-    @apply appearance-none pointer-events-auto size-6 bg-theme-600 rounded-full shadow cursor-pointer;
-}
-
-.range-slider::-webkit-slider-thumb:hover {
-    @apply bg-theme-800 cursor-ew-resize;
+    @apply appearance-none pointer-events-auto size-6 bg-theme-500 rounded-full shadow cursor-pointer hover:bg-theme-600 hover:cursor-ew-resize;
 }
 
 .range-slider::-webkit-slider-thumb:active {
     @apply shadow-theme-500;
+}
+
+.range-slider:disabled::-webkit-slider-thumb {
+    @apply shadow-none bg-theme-800 hover:bg-theme-800 cursor-not-allowed;
 }
 
 .from-slider {
