@@ -1,5 +1,7 @@
 # Range slider component
 
+<img src="https://cdn.discordapp.com/attachments/776387257224921088/1257619375247331328/image.png?ex=668510d0&is=6683bf50&hm=4952b8c2d856f3dd703b99c5736454435510f0e196fdbfd82d6d2eca7caffb4a&" style="max-height: 10rem;"/>
+
 The range slider component provides a simple and lightweight solution for sliders with **two** handles in your laravel
 application.
 

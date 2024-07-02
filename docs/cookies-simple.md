@@ -1,5 +1,7 @@
 # Cookies (simple)
 
+<img src="https://cdn.discordapp.com/attachments/776387257224921088/1257623257360765009/msedge_0kAfkaBRqz.gif?ex=6685146e&is=6683c2ee&hm=dba89625796e0624ebca9354954be32b764c4a64a4c6a7f7c334153ca6203746&" style="max-height: 10rem;"/>
+
 The Cookie Notification component provides a simple and effective way to notify users about cookie usage on your
 website. It includes accept and decline buttons, allowing users to manage their cookie preferences.
 
@@ -42,7 +44,7 @@ When using this approach, you can use the `SidebarHandler` to customize some beh
 
 You can use these events and properties.
 
-```typescript
+````typescript
 simpleCookieHandler.cookie_consent_given;
 
 simpleCookieHandler.onCookiesDeclined = () => {
@@ -52,7 +54,7 @@ simpleCookieHandler.onCookiesDeclined = () => {
 simpleCookieHandler.onCookiesDeclined = () => {
     //Do something here
 };
-```
+````
 
 ## Usage
 
@@ -62,7 +64,6 @@ purpose.
 ### Basic Structure
 
 ```html
-
 <x-ui::cookies-simple>
     <x-slot name="content">
         <!--
@@ -86,7 +87,6 @@ purpose.
 ### Example
 
 ```html
-
 <x-ui::cookies-simple>
     <x-slot name="content">
         We use cookies for tracking, hacking and other illegal stuff. Find more <a href="/hacking">here</a>

@@ -1,5 +1,7 @@
 # Expand Component
 
+<img src="https://cdn.discordapp.com/attachments/776387257224921088/1257622100466729010/msedge_Hxz7Qk2aMj.gif?ex=6685135a&is=6683c1da&hm=51e2eecacac42180b371d240cda2a879ed613c19fabcc83027c3b1028d31d6b9&" style="max-height: 10rem;"/>
+
 The Expand component provides a simple and lightweight solution for creating expandable sections within your Laravel
 application.
 
@@ -53,7 +55,6 @@ purpose.
 ### Basic Structure
 
 ```html
-
 <x-ui::expand>
     <x-slot name="title">
         <!-- 
@@ -72,7 +73,6 @@ purpose.
 ### Example
 
 ```html
-
 <x-ui::expand>
     <x-slot name="title">
         <h2>Filters</h2>
@@ -96,7 +96,6 @@ your custom max-height through a CSS class, using either a Tailwind class or Tai
 #### Example
 
 ```html
-
 <x-ui::expand max-height="max-h-[250px]">
     <x-slot name="title">
         ...
@@ -114,7 +113,6 @@ You can set the initial state of the expandable section using the `opened` attri
 #### Example
 
 ```html
-
 <x-ui::expand opened="true">
     <x-slot name="title">
         ...
@@ -127,13 +125,12 @@ You can set the initial state of the expandable section using the `opened` attri
 
 ### Displaying a State Indicator (Arrow)
 
-To add an arrow that changes its direction based on the state of the component, use an element with the class *
-*expand-toggle**. This element will be transformed with CSS.
+To add an arrow that changes its direction based on the state of the component, use an element with the class 
+**expand-toggle**. This element will be transformed with CSS.
 
 #### Example
 
 ```html
-
 <x-ui::expand opened="true">
     <x-slot name="title">
         ...

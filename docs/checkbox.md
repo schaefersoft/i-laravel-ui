@@ -1,10 +1,12 @@
-# Button
+# Checkbox
 
-The `<x-ui::chechbox/>` provides a simple checkbox.
+<img src="https://cdn.discordapp.com/attachments/776387257224921088/1257620544132481034/image.png?ex=668511e7&is=6683c067&hm=f16a6e23d79563d3ef4642cdb24b23b60132a35461ecc4b8e9900d8469c2bbcc&" style="max-height: 10rem;"/>
+
+The checkbox component provides a simple checkbox.
 
 ## Imports
 
-The checkbox requires no additional imports.
+The checkbox component requires no additional imports.
 
 ## Usage
 
