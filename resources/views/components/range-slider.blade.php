@@ -22,19 +22,25 @@
     @if($showDetails)
         <div class="flex items-center justify-between flex-row pt-4">
             <p>
+                @if($prefix)
+                    {{$prefix}}
+                @endif
                 <span class="lower-value">
                     {{$lowerValue}}
                 </span>
-                @if($unit)
-                    {{$unit}}
+                @if($suffix)
+                    {{$suffix}}
                 @endif
             </p>
             <p>
+                @if($prefix)
+                    {{$prefix}}
+                @endif
                 <span class="upper-value">
                     {{$upperValue}}
                 </span>
-                @if($unit)
-                    {{$unit}}
+                @if($suffix)
+                    {{$suffix}}
                 @endif
             </p>
         </div>
