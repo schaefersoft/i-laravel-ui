@@ -74,13 +74,15 @@ To use the range slider component, follow these steps.
 
 ## Attributes
 
-| Name         | Type                 | Purpose                                                                     | Default value | Example value |
-|--------------|----------------------|-----------------------------------------------------------------------------|---------------|---------------|
-| $lowerName   | string, **required** | Set the name and ID of the lower input value                                | -             | heigth-lower  |
-| $upperName   | string, **required** | Set the name and ID of the lower upper value                                | -             | heigth-upper  |
-| $min         | int, nullable        | Set the min value of both inputs                                            | 0             | 50            |
-| $max         | int, nullable        | Set the max value of both inputs                                            | 100           | 180           |
-| $lowerValue  | int, nullable        | Set the current lower value                                                 | null          | 20            |
-| $upperValue  | int, nullable        | Set the current upper value                                                 | null          | 80            |
-| $showDetails | bool, nullable       | Set if the details (values below ths slider) should be displayed            | true          | false         |
-| $unit        | string, nullable     | Appends a unit to the values below the silder (only if $showDetails = true) | null          | cm            |
+| Name           | Type                 | Purpose                                                                     | Default value | Example value |
+|----------------|----------------------|-----------------------------------------------------------------------------|---------------|---------------|
+| $lowerName     | string, **required** | Set the name and ID of the lower input value                                | -             | heigth-lower  |
+| $upperName     | string, **required** | Set the name and ID of the lower upper value                                | -             | heigth-upper  |
+| $min           | int, nullable        | Set the min value of both inputs                                            | 0             | 50            |
+| $max           | int, nullable        | Set the max value of both inputs                                            | 100           | 180           |
+| $lowerValue    | int, nullable        | Set the current lower value                                                 | null          | 20            |
+| $upperValue    | int, nullable        | Set the current upper value                                                 | null          | 80            |
+| $showDetails   | bool, nullable       | Set if the details (values below ths slider) should be displayed            | true          | false         |
+| $unit          | string, nullable     | Appends a unit to the values below the silder (only if $showDetails = true) | null          | cm            |
+| $lowerDisabled | boolean, nullable    | Set if the lower input is disabled                                          | null          | true          |
+| $upperDisabled | boolean, nullable    | Set if the upper input is disabled                                          | null          | true          |
