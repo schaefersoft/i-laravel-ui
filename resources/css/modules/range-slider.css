@@ -1,0 +1,35 @@
+.range-slider-frame {
+    @apply relative;
+}
+
+.range-slider-background {
+    @apply absolute w-full h-1 bg-gray-300;
+}
+
+.range-slider-background .selected {
+    @apply absolute bg-theme-400 h-full;
+}
+
+.range-slider {
+    @apply absolute top-0.5 appearance-none pointer-events-none w-full h-0 bg-opacity-0;
+}
+
+.range-slider::-webkit-slider-thumb {
+    @apply appearance-none pointer-events-auto size-6 bg-theme-600 rounded-full shadow cursor-pointer;
+}
+
+.range-slider::-moz-range-thumb {
+    @apply appearance-none pointer-events-auto size-6 bg-theme-600 rounded-full shadow cursor-pointer;
+}
+
+.range-slider::-webkit-slider-thumb:hover {
+    @apply bg-theme-800 cursor-ew-resize;
+}
+
+.range-slider::-webkit-slider-thumb:active {
+    @apply shadow-theme-500;
+}
+
+.from-slider {
+    @apply z-[1];
+}
