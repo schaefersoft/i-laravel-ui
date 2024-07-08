@@ -47,12 +47,12 @@ You can use these events and properties.
 ````typescript
 simpleCookieHandler.cookie_consent_given;
 
-simpleCookieHandler.onCookiesDeclined = () => {
+simpleCookieHandler.onCookiesAccepted = () => {
     //Do something here, e.g. enable Google analytics
 };
 
 simpleCookieHandler.onCookiesDeclined = () => {
-    //Do something here
+    //Do something here, collect data anyways (don't do that, just a joke)
 };
 ````
 
