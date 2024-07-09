@@ -1,6 +1,6 @@
 # SchaeferSoft LaravelUI
 
-<img src="https://cdn.discordapp.com/attachments/776387257224921088/1252603513150771200/logo_full_dark_1.png?ex=66849dad&is=66834c2d&hm=f19ef4e0a4981aaea8c87c683272a927ee19ed3f1d4d54d0ce9f91cd7252eeab&"/>
+<img src="https://schaefersoft.ch/_static/logo_full_dark.png"/>
 
 Free schaefersoft UI package for Laravel. Tailwind is required.
 
