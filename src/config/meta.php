@@ -100,7 +100,7 @@ return [
         'image-alt' => null,
         // The URL of the content
         // Example: 'url' => 'https://www.buzzlightyear.com/your-page'
-        'url' => url()->current(),
+        'url' => '',
         // The name of the website
         // Example: 'site-name' => 'BuzzLightyear'
         'site-name' => null,
@@ -126,7 +126,7 @@ return [
         'image-alt' => null,
         // The URL of the content
         // Example: 'url' => 'https://www.buzzlightyear.com/your-page'
-        'url' => url()->current(),
+        'url' => '',
         // The Twitter username of the site
         // Example: 'site' => '@buzzlightyear'
         'site' => null,
