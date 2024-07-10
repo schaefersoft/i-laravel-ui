@@ -14,6 +14,10 @@ class UIServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->publishes([
+            __DIR__.'/../config/meta.php' => config_path('schaefersoft-meta.php'),
+        ]);
+        
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'ui');
 
         Blade::componentNamespace('Schaefersoft\\UI\\View\\Components', 'ui');
