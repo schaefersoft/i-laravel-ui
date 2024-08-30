@@ -12,9 +12,12 @@ class Select extends Component
         public string $label = 'Unnamed input',
         public bool   $disabled = false,
         public bool   $autofocus = false,
-        public bool   $requiredAsterisk = false
+        public bool   $requiredAsterisk = false,
+        public ?string $errorName = null
     )
     {
+        if ($this->errorName === null)
+            $this->errorName = $this->name;
     }
 
     public function render(): View

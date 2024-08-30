@@ -16,9 +16,12 @@ class Input extends Component
         public string  $autocomplete = 'off',
         public bool    $disabled = false,
         public bool    $autofocus = false,
-        public bool    $requiredAsterisk = false
+        public bool    $requiredAsterisk = false,
+        public ?string $errorName = null
     )
     {
+        if ($this->errorName === null)
+            $this->errorName = $this->name;
     }
 
     public function render(): View

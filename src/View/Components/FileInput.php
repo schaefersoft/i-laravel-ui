@@ -15,8 +15,11 @@ class FileInput extends Component
         public bool    $multiple = false,
         public bool    $requiredAsterisk = false,
         public ?string $accept = null,
+        public ?string $errorName = null
     )
     {
+        if ($this->errorName === null)
+            $this->errorName = $this->name;
     }
 
     public function render(): View
