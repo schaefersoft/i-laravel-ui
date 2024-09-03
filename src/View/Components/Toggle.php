@@ -11,6 +11,7 @@ class Toggle extends Component
     public function __construct(
         public string $name,
         public bool   $checked = false,
+        public bool   $disabled = false,
     )
     {
     }
