@@ -1,0 +1,10 @@
+.currency-input::-webkit-outer-spin-button,
+.currency-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.currency-input {
+    -moz-appearance: textfield;
+}
