@@ -5,7 +5,7 @@
         </a>
 
         <div class="absolute right-0 top-50% max-w-6 max-h-6">
-            {{$extra}}
+            {{ $extra ?? '' }}
         </div>
     </div>
 </div>
