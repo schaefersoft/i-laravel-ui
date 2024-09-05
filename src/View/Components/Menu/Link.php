@@ -1,12 +1,12 @@
 <?php
 
-namespace Schaefersoft\UI\View\Components;
+namespace Schaefersoft\UI\View\Components\Menu;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class MenuLink extends Component
+class Link extends Component
 {
     public function __construct(
         public string $href,
@@ -23,6 +23,6 @@ class MenuLink extends Component
 
     public function render(): View
     {
-        return view('ui::components.menu-link');
+        return view('ui::components.menu.link');
     }
 }

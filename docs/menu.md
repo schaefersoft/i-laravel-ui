@@ -46,6 +46,16 @@ The title renders a styled title. It has a slot to set the content of the title.
 </x-ui::menu-title>
 ```
 
+### Menu Divider
+
+Renders a simple divider for the menu.
+
+#### Example
+
+```html
+<x-ui::menu-divider/>
+```
+
 ### Menu Link
 
 The link renders a link. It has a slot to set the content of the link.
@@ -56,6 +66,21 @@ The link renders a link. It has a slot to set the content of the link.
 <x-ui::menu-link href="/settings"
                  :respect-sub-navigation="false">
     Settings
+</x-ui::menu-link>
+```
+
+#### Slot
+
+The link has a slot for a extra, this is a item, which is shown at the end of the link (intended for a badge or button)
+
+```html
+<x-ui::menu-link href="/settings"
+                 :respect-sub-navigation="false">
+    Settings
+    
+    <x-slot name="extra">
+        6
+    </x-slot>
 </x-ui::menu-link>
 ```
 

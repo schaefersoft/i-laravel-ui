@@ -1,12 +1,12 @@
 <?php
 
-namespace Schaefersoft\UI\View\Components;
+namespace Schaefersoft\UI\View\Components\Menu;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class MenuTitle extends Component
+class Divider extends Component
 {
     public function __construct(
     )
@@ -15,6 +15,6 @@ class MenuTitle extends Component
 
     public function render(): View
     {
-        return view('ui::components.menu-title');
+        return view('ui::components.menu.divider');
     }
 }
