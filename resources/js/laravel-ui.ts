@@ -5,3 +5,4 @@ import './modules/password-strength';
 import './modules/range-slider';
 import './modules/currency-input';
 import './modules/multiselect';
+import './modules/dropzone';
