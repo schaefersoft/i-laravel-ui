@@ -6,3 +6,4 @@ import './modules/range-slider';
 import './modules/currency-input';
 import './modules/multiselect';
 import './modules/dropzone';
+import './modules/autocomplete';
