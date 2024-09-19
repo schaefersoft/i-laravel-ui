@@ -10,9 +10,14 @@
     </div>
     <div class="text-sm leading-6">
         <label for="{{$name}}" class="flex items-center ps-3 font-medium text-gray-900 hover:cursor-pointer">
-            {{$slot}} @if($requiredAsterisk)
-                <span class="text-red-600">*</span>
-            @endif
+            <p>
+                <span>
+                    {{$slot}}
+                </span>
+                @if($requiredAsterisk)
+                    <span class="text-red-600">*</span>
+                @endif
+            </p>
         </label>
     </div>
 </div>
