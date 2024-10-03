@@ -8,6 +8,7 @@
         name="{{$name}}"
         id="{{$name}}"
         rows="{{$rows}}"
+        placeholder="{{$placeholder}}"
         @if($disabled) disabled @endif {{$attributes}}>@if($value){{$value}}@endif</textarea>
     @error($name)
     <p class="text-sm text-red-600">{{ $message }}</p>
