@@ -9,7 +9,7 @@
         id="{{$name}}"
         rows="{{$rows}}"
         placeholder="{{$placeholder}}"
-        @if($disabled) disabled @endif {{$attributes}}>@if($value){{$value}}@endif</textarea>
+        @if($disabled) disabled @endif {{$attributes}}>{{$value}}</textarea>
     @error($name)
     <p class="text-sm text-red-600">{{ $message }}</p>
     @enderror
