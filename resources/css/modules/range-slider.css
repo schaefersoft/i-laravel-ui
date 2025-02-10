@@ -11,7 +11,7 @@
 }
 
 .range-slider {
-    @apply absolute top-0.5 appearance-none pointer-events-none w-full h-0 bg-opacity-0;
+    @apply absolute top-0.5 appearance-none pointer-events-none w-full h-0 bg-transparent;
 }
 
 .range-slider::-webkit-slider-thumb {
