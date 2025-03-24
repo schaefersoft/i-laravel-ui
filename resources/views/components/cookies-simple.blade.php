@@ -1,5 +1,5 @@
 <div id="cookie-notification"
-     class="container fixed left-1/2 -translate-x-1/2 pb-3 w-full z-[200] translate-y-full -bottom-1">
+     class="container fixed left-1/2 -translate-x-1/2 pb-3 w-full z-200 translate-y-full -bottom-1">
     <div class="p-4 md:px-8 bg-white rounded-md drop-shadow-[0_0px_35px_rgba(0,0,0,0.25)]">
         <div class="grid grid-cols-12 gap-2">
             <div class="col-span-12 md:col-span-8">

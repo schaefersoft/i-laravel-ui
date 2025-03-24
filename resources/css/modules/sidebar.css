@@ -1,5 +1,5 @@
 #sidebar {
-    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-[80vw] max-sm:bg-white max-sm:z-[110] max-sm:-translate-x-full sm:col-span-4 max-sm:transition-transform max-sm:duration-150 max-sm:ease-in-out md:col-span-3;
+    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-[80vw] max-sm:bg-white max-sm:z-110 max-sm:-translate-x-full sm:col-span-4 max-sm:transition-transform max-sm:duration-150 max-sm:ease-in-out md:col-span-3;
 }
 
 #sidebar[data-opened] {
@@ -11,7 +11,7 @@
 }
 
 #sidebar-background {
-    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-full max-sm:bg-black/40 max-sm:z-[100] max-sm:-translate-x-full opacity-0 transition-opacity duration-300 ease-in-out sm:hidden;
+    @apply max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:h-dvh max-sm:w-full max-sm:bg-black/40 max-sm:z-100 max-sm:-translate-x-full opacity-0 transition-opacity duration-300 ease-in-out sm:hidden;
 }
 #sidebar[data-opened] + #sidebar-background {
     @apply max-sm:translate-x-0 opacity-100;

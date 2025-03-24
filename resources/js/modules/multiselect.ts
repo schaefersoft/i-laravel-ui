@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const badge = document.createElement('span');
             badge.className = 'inline-flex items-center mt-2 px-2 py-0.5 rounded-full text-xs font-medium bg-theme-100 text-theme-700 mr-2';
             badge.dataset.value = value;
-            badge.innerHTML = `${text} <button type="button" class="ml-1 text-theme-600 hover:text-theme-800 focus:outline-none focus:text-theme-800">&times;</button>`;
+            badge.innerHTML = `${text} <button type="button" class="ml-1 text-theme-600 hover:text-theme-800 focus:outline-hidden focus:text-theme-800">&times;</button>`;
 
             const removeButton = badge.querySelector('button') as HTMLButtonElement;
             removeButton.addEventListener('click', () => {

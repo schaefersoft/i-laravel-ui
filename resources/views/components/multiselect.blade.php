@@ -3,7 +3,7 @@
         class="relative flex items-center flex-wrap p-0.5 rounded-md border-0 ring-1 ring-inset @if($errors->has($name)) ring-red-500 @else ring-gray-300 @endif focus-within:ring-2 focus-within:ring-inset focus-within:ring-theme-600">
         <div data-search-badge-container class="flex flex-wrap space-2 px-2"></div>
         <input data-search-input
-               class="flex-grow block w-full border-0 text-gray-900 mx-0 placeholder:text-gray-400 focus:outline-none focus:ring-0 sm:text-sm sm:leading-6 m-0"
+               class="grow block w-full border-0 text-gray-900 mx-0 placeholder:text-gray-400 focus:outline-hidden focus:ring-0 sm:text-sm sm:leading-6 m-0"
                name="{{$name}}"
                id="{{$name}}"
                type="text"
@@ -27,7 +27,7 @@
     @enderror
 
     <div data-search-dropdown
-         class="absolute left-0 top-full rounded-md shadow bg-white border z-10 w-full max-h-[40vh] overflow-y-auto hidden">
+         class="absolute left-0 top-full rounded-md shadow-sm bg-white border z-10 w-full max-h-[40vh] overflow-y-auto hidden">
 
         @foreach($items as $item)
             <div data-search-dropdown-value="{{ $item['value'] }}"

@@ -2,7 +2,7 @@
     <div
         class="relative flex items-center p-0.5 rounded-md border-0 ring-1 ring-inset @if($errors->has($name)) ring-red-500 @else ring-gray-300 @endif focus-within:ring-2 focus-within:ring-inset focus-within:ring-theme-600">
         <input data-autocomplete-input
-               class="block w-full border-0 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0 sm:text-sm sm:leading-6"
+               class="block w-full border-0 text-gray-900 placeholder:text-gray-400 focus:outline-hidden focus:ring-0 sm:text-sm sm:leading-6"
                name="{{ $name }}"
                id="{{ $name }}"
                type="text"
@@ -26,7 +26,7 @@
     @enderror
 
     <div data-autocomplete-dropdown
-         class="absolute left-0 top-full rounded-md shadow bg-white border z-10 w-full max-h-[40vh] overflow-y-auto hidden">
+         class="absolute left-0 top-full rounded-md shadow-sm bg-white border z-10 w-full max-h-[40vh] overflow-y-auto hidden">
         @foreach($items as $item)
             <div data-autocomplete-item="{{ $item }}"
                  class="py-2 px-3 hover:bg-gray-200 cursor-pointer @if(!$loop->last) border-b @endif">
